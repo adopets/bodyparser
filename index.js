@@ -14,6 +14,7 @@ const typeis = require('type-is');
 
 module.exports = function(opts) {
   opts = opts || {};
+  opts.jsonLimt = opts.jsonLimt || '10mb';
   const {detectJSON} = opts;
   const {onerror} = opts;
 
